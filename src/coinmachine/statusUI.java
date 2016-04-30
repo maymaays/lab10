@@ -4,7 +4,6 @@ package coinmachine;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
-import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Observer;
@@ -129,6 +128,12 @@ public class statusUI extends JFrame implements Observer {
 		statusBar.setValue(machine.getCount());
 		statusBar.setToolTipText(machine.getCount() + "");
 		statusBar.setString(machine.getCount() + "");
+		if (machine.getCount() >= machine.getCapacity() / 2) {
+			statusBar.setForeground(Color.YELLOW);
+		} else if (machine.getCount() == machine.getCapacity()) {
+			statusBar.setForeground(Color.RED);
+		}
+		
 
 	}
 /**
