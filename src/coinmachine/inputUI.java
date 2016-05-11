@@ -9,7 +9,7 @@ import javax.swing.*;
 /**
  * Respresents a coin updater, this progrogram will update, when a coin is inserted
  * and the progress bar will update, if the number of coin is increasing.
- * @author methawee
+ * @author Methawee Apinainarong 5810546714
  *
  */
 public class inputUI extends JFrame implements Observer {

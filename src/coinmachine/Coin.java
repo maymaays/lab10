@@ -75,10 +75,10 @@ public class Coin implements Comparable<Coin> {
 		Coin other = (Coin) obj;
 		if (obj instanceof Coin) {
 			if (this.getValue() == other.getValue() && this.getCurrency().equals(other.getCurrency())) {
-				return this == obj;
+				return true;
 			}
 		}
-		return this != obj;
+		return false;
 	}
 
 	/**

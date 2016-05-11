@@ -13,7 +13,7 @@ import javax.swing.border.*;
 /**
  * Respresent the status of the capicitor of the coin,
  * the progress bar is depending on the number of coin.
- * @author methawee
+ * @author Methawee Apinainarong 5810546714
  *
  */
 public class statusUI extends JFrame implements Observer {
